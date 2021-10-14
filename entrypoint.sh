@@ -28,7 +28,7 @@ echo "jmeter args=$@"
 # Keep entrypoint simple: we must pass the standard JMeter arguments
 jmeter $@
 echo "END Running Jmeter on `date`"
-
+python /docker_start.py
 #     -n \
 #    -t "/tests/${TEST_DIR}/${TEST_PLAN}.jmx" \
 #    -l "/tests/${TEST_DIR}/${TEST_PLAN}.jtl"
